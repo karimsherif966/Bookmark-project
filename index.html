@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="https://cdn.vectorstock.com/i/1000x1000/13/52/bookmark-vector-14691352.webp">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link href="css/all.css" rel="stylesheet">
+    <!-- Css file -->
+    <link href="styling.css" rel="stylesheet">
+</head>
+<body>
+     <main class="container">
+        <div class="pt-5">
+            <h1 class="m-auto  pb-5 position-relative  ">Bookmarker</h1>
+        </div>
+        <div class="bookmark pt-4">
+            <h3 class="text-center fs-4 m-auto"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h3>
+           <div class="my-4">
+            <label for="siteName" class="pb-1"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input type="text" id="siteName" name="siteName" class="form-control" placeholder="Bookmark Name">
+           </div>
+           <div>
+            <label for="siteURL" class="pb-1"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" id="siteURL" name="siteURL" class="form-control" placeholder="Website URL">
+           </div>
+            <button class="btn btn-info  px-5 m-auto d-block my-4"  id="submit">Submit</button>
+        </div>
+        <table class="table mt-4 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+               
+            </tbody>
+
+        </table>
+
+
+
+     </main>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- sweet alert library -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <!-- Javascript file -->
+    <script src="index.js"></script>
+    
+</body>
+</html>
